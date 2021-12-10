@@ -1,20 +1,17 @@
 const fs = require("fs/promises");
-// const chalk = require("chalk");
 const path = require("path");
 const crypto = require("crypto");
-const contactsPath = path.join(__dirname, "./db/contacts.json");
+const contactsPath = path.join(__dirname, "db", "contacts.json");
 
 const readContent = async () => {
-  const contactsPath = await fs.readFile(
-    path.join(__dirname, "db", "contacts.json"),
-    "utf8"
-  );
-  const result = JSON.parse(contactsPath);
+  const contentJson = await fs.readFile(contactsPath, "utf8");
+  const result = JSON.parse(contentJson);
   return result;
 };
 
 const listContacts = async () => {
-  return await readContent();
+  const result = await readContent();
+  return result;
 };
 const getContactById = async (contactId) => {
   const contacts = await readContent();
@@ -24,7 +21,9 @@ const getContactById = async (contactId) => {
 
 const removeContact = async (contactId) => {
   const contacts = await readContent();
-  const id = contacts.findIndex((item) => contactId === item.id.toString());
+  const id = contacts.findIndex(
+    (contact) => contactId === contact.id.toString()
+  );
   if (id === -1) {
     return;
   }

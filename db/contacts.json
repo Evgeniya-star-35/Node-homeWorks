@@ -6,12 +6,6 @@
     "phone": "(992) 914-3792"
   },
   {
-    "id": "4",
-    "name": "Wylie Pope",
-    "email": "est@utquamvel.net",
-    "phone": "(692) 802-2949"
-  },
-  {
     "id": "6",
     "name": "Abbot Franks",
     "email": "scelerisque@magnis.org",
@@ -36,21 +30,9 @@
     "phone": "(704) 398-7993"
   },
   {
-    "id": "10",
-    "name": "Alec Howard",
-    "email": "Donec.elementum@scelerisquescelerisquedui.net",
-    "phone": "(748) 206-2688"
-  },
-  {
+    "id": "2c1284c5-cfee-4682-9dc3-ee49e219a331",
     "name": "Mango",
     "email": "mango@gmail.com",
-    "phone": "322-22-22",
-    "id": "93f925ac-2cf4-4b58-b903-406501aa4f1b"
-  },
-  {
-    "id": "fffe8e5a-e0cb-41b5-adc4-1258908e8833",
-    "name": "Boby",
-    "email": "boby@gmail.com",
-    "phone": "322-2278-12"
+    "phone": "322-22-22"
   }
 ]
